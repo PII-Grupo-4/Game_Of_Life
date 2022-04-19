@@ -6,7 +6,9 @@ namespace PII_Game_Of_Life
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            bool[,] gameBoard = LeerArchivo.LeerArchivoFuncion(@"../../assets/board.txt");
+            ImprimirTablero.ImprimirTableroFuncion(gameBoard);
         }
     }
 }
